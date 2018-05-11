@@ -62,3 +62,18 @@
   margin-right: 15rpx;
   
 }
+.lists {
+  height: 0;
+  flex: 1;
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
+}
+.lists .item{
+  border-bottom: 1px dotted #eee;
+  position: relative;
+  overflow: hidden;
+
+}
+.lists .item .content{
+  
+}
