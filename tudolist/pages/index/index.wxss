@@ -1,0 +1,64 @@
+.titleBar{
+  border-bottom: 1px solid #eee;
+  padding: 0 30rpx 10rpx;
+  display: flex;
+  align-items: center;
+
+}
+.titleBar .status{
+  flex: 1;
+  /* background: red; */
+}
+/* 主元素拿到其他子元素本身该有的大小外所有的空间 */
+/* flex比例关系  flex 1   flex  1   表示1 : 1 */
+
+.titleBar .status text{
+  display: inline;
+  font-size: 12pt;
+  color: #999999;
+  padding: 10rpx -20rpx -10rpx 0;
+  margin-right: 15rpx;
+}
+.add{
+  /* flex: 1; */
+  /* background: green; */
+}
+.titleBar .status text.active{
+  color: #ca2100;
+}
+/* MVVM 时代 */
+/* 弹出层来做 移动端 小 节省空间  */
+.addForm{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(0,0,0,.4);
+
+}
+.addForm .addForm-div{
+  background: #fff;
+  padding: 30rpx;
+}
+.weui-input{
+  /* 当前的font-size: ; */
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
+.addForm .addForm-div .weui-input{
+  border: 1PX solid #ccc;
+  border-radius: 5px;
+  padding: 5rpx 20rpx;
+  font-size: 12pt;
+  margin-bottom: 10rpx;
+}
+.weui-btn:first-child{
+  margin-top: 0;
+}
+.weui-btn .addForm-div .addForm-btn button{
+  margin-right: 15rpx;
+  
+}
