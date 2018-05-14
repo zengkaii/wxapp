@@ -75,5 +75,38 @@
 
 }
 .lists .item .content{
-  
+  display: flex;
+  padding: 15rpx -30rpx;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 694rpx;
+  z-index: 10;
+  background: #fff;
+
 }
+.lists .item icon{
+  padding: 15rpx 0 10rpx;
+}
+icon{
+  vertical-align: middle;
+}
+.lists .item .time{
+  font-size: 9pt;
+  color: #999999;
+}
+.lists .item text{
+  font-size: 11pt;
+  color: #444444;
+  padding: 0 10rpx;
+}
+.lists .item .title{
+  flex: 1;
+  overflow: hidden;
+  /* 空白符不换行 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* background: red; */
+}
+
