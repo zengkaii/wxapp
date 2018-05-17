@@ -1,14 +1,19 @@
 <!-- 有的组件在多个页面都会共享， -->
 
 <import src="/templates/spinner.wxml" />
-<navigator class="media-box media-box__appmsg" url="/page/post/show?id={{item.id}}" wx:for="{{entities}}" wx:key="{{item.id}}">
+<navigator url="/pages/posts/posts?id={{item.id}}" class="media-box media-box_appmsg" wx:for="{{ entities }}" wx:key="{{ item.id }}">
     <view class="media-box__hd media-box__hd_in-appmsg">
-        <image class="media-box__thumb" src="/assets/images/a.png"></image>
+      <image class="media-box__thumb"
+    src="/assets/images/a.png" />
     </view>
-    <view class="media-box__bd media-box__bd_in_appmsg">
-        <view class="media-box__title">{{item.title.rendered}}</view>
-        <view class="media-box__desc">{{item.excerpt.plaintext}}</view>
+    <view class="media-box__bd media-box__bd_in-appmsg">
+      <view class="media-box__title">
+        {{item.title.rendered}}-{{index}}
+      </view>
+      <view class="media-box__desc">
+        {{item.excerpt.plaintext}}
+      </view>
     </view>
-</navigator>
-
+  </navigator>
+  
 <template is="spinner" data="{{isLoading}}"/>
