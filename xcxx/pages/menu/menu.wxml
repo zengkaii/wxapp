@@ -1,0 +1,24 @@
+<view class="mpage {{!ui.tStart?'withAnimate':''}}" style="width:{{ui.windowWidth}}px;left:{{ui.offsetLeft}}px;"
+bindtouchstart="handlerStart" bindtouchmove="handlerMove" bindtouchcancle="handlerCancle" bindtouchend="handlerEnd">
+    <scroll-view scroll-y style="height:100%" bindscroll="handlerScroll">
+      <view class="search">
+          <!-- 不会冒泡 -->
+        <view class="avatar" catchtap="handlerAvartarTap">
+          <image src="../../imgs/ic_face.png"/>
+        </view>
+      </view>
+      <view class="item" wx:for="1234555" wx:key="{{index}}">
+        <image src="../../imgs/ic_face.png"/>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="user"  style="width:{{ui.menuWidth}}px">
+      <view class="user-box">
+          <view class="user-face-wrapper">
+              <image class="user-face" src="../../imgs/ic_face.png"/>
+          </view>
+          <view class="one-menu" wx:for="1234" wx:key="{{index}}">
+              <text>新年大吉</text>
+          </view>
+      </view>
+  </view>
