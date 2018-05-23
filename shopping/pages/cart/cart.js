@@ -9,6 +9,7 @@ Page({
     cart:[],
     totalPrice:0,
     selectAllStatus:true,
+    selected:true
 
   },
 
@@ -77,9 +78,11 @@ Page({
     })
     this.getTotalPrice();
   },
-  getTotalPrice(){
+  getTotalPrice(e){
+    let selectAllStatus = this.data.selectAllStatus;
     let carts = this.data.carts;
     let total = 0;
+    
     for(let i =0;i<carts.length;i++){
       // total += carts[i].num *carts[i].price;
       if(carts[i].selected){
@@ -87,17 +90,39 @@ Page({
 
       }
     }
+  
     this.setData({
+      carts,
+     selectAllStatus,
       totalPrice:total.toFixed(2)
     })
+    // this.selectList();
   },
-selectList(e){
+selectList(e){ 
+  let selectAllStatus = this.data.selectAllStatus;
   const index=e.currentTarget.dataset.index;
   let carts=this.data.carts;
   const selected=carts[index].selected;
   carts[index].selected=!selected;
+  
+  for(let i=0;i<carts.length;i++){
+
+    if(carts[index].selected===false){
+    selectAllStatus=false;
+  }else if (carts[i].selected===false && carts[index].selected === true){
+
+    selectAllStatus=false;
+  }
+  else {
+    selectAllStatus=true;
+  }
+
+  }
+  
   this.setData({  
-    carts
+    carts,
+    selectAllStatus
+   
   });
   this.getTotalPrice();
 },
