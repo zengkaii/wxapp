@@ -45,8 +45,12 @@
     <view class="goods-tab-nav {{nav1?'on':''}}" date-index="0" bindtap="navSelect1">商品详情</view>
     <view class="goods-tab-nav {{nav2?'on':''}}" date-index="1" bindtap="navSelect2">产品参数</view>
     <view class="goods-tab-nav {{nav3?'on':''}}" data-index="2" bindtap="navSelect3">售后保障</view>
+
+
     <view class="goods-content">
-      <view>{{goods.service}}</view>
+      <view wx:if="{{nav1}}">{{goods.detail}}</view>
+      <view wx:if="{{nav2}}">{{goods.parameter}}</view>
+      <view wx:if="{{nav3}}">{{goods.service}}</view>
     </view>
   </view>
 </view>

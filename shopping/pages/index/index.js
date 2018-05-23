@@ -13,7 +13,7 @@ Page({
     goods: null,
     nav1:true,
     nav2:false,
-    nav3:false
+    nav3:false,
   },
   
   onLoad (options) {
@@ -86,5 +86,6 @@ Page({
       nav2:false,
       nav3:true
     })
-  }
+  },
+
 })
