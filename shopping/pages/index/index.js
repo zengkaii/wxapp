@@ -70,7 +70,8 @@ Page({
     this.setData({
       nav1:true,
       nav2:false,
-      nav3:false
+      nav3:false,
+
     })
   },
   navSelect2(){
