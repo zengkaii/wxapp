@@ -4,7 +4,10 @@
     "pages/logs/logs",
     "pages/my/my",
     "pages/card/card",
-    "pages/electric/electric"
+    "pages/electric/electric",
+    "pages/recharge/recharge",
+    "templates/template",
+    "pages/record/record"
   ],
   "window": {
     "backgroundTextStyle": "light",
