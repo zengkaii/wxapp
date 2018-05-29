@@ -1,0 +1,18 @@
+<view class="main">
+    <view class="post-search">
+        <image src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/b921bee784a1290f22e3b5d47c710d95_121_121.jpg"></image>
+        <navigator>
+            <input class="post-search-input" type="text" placeholder="搜索公司/职位"/>
+        </navigator>
+    </view>
+    <view class="post-recommend">
+        <view class="post-recommend-title">———— 为你推荐好职位 ————</view>
+        <view class="post-recommend-list">
+            <view class="post-recommend-item">
+                <view class="post-recommend-detail">
+                    
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
