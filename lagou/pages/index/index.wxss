@@ -1,21 +1,35 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.mian{
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.post-search{
+  background-color:#11a983;
+  height: 210rpx;
 }
+.post-search image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+  margin-left: 320rpx;
+}
+.post-search-bar{
+  position: relative;
 
-.usermotto {
-  margin-top: 200px;
+}
+.post-icon-search_in-box{
+  position: absolute;
+  top: 15rpx;
+  left: 250rpx;
+  z-index: 99;
+
+}
+.post-search-bar__input{
+  /* width: 600rpx; */
+  background-color: white;
+  color: #d9d9d9;
+  font-size: 10pt;
+  text-align: center;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  /* border-top-left-radius: 50%; */
+  border-radius: 50rpx;
 }

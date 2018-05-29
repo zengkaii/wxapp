@@ -1,12 +1,21 @@
 <view class="main">
     <view class="post-search">
-        <image src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/b921bee784a1290f22e3b5d47c710d95_121_121.jpg"></image>
+        <image src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/b921bee784a1290f22e3b5d47c710d95_121_121.jpg"
+        mode="aspectFill"></image>
         <navigator>
-            <input class="post-search-input" type="text" placeholder="搜索公司/职位"/>
-        </navigator>
+            <view class="post-search-bar">
+                <icon class="post-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="post-search-bar__input" placeholder="搜索公司/职位" focus="{{inputShowed}}" bindinput="inputTyping" />
+               
+            </view>
+    </navigator>
     </view>
     <view class="post-recommend">
-        <view class="post-recommend-title">———— 为你推荐好职位 ————</view>
+        <view class="post-recommend-title">
+            <view class="title_left"></view>
+            <view class="title_mid">为你推荐的好职位</view>
+            <view class="title_right"></view>
+        </view>
         <view class="post-recommend-list">
             <view class="post-recommend-item">
                 <view class="post-recommend-detail">
