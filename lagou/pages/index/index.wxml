@@ -1,8 +1,8 @@
 <view class="main">
     <view class="post-search">
-        <image src="https://ss0.bdstatic.com/-0U0bnSm1A5BphGlnYG/tam-ogel/b921bee784a1290f22e3b5d47c710d95_121_121.jpg"
+        <image src="https://www.lgstatic.com/i/image/M00/76/40/Cgp3O1g1TNOAB2yxAAA9bQUyc4g814.png"
         mode="aspectFill"></image>
-        <navigator hover-class="none">
+        <navigator hover-class="none" url="../search/search">
             <view class="post-search-bar">
                
                 <view class="post-search-bar__input"><icon class="post-icon-search_in-box" type="search" size="14"></icon>
@@ -13,16 +13,20 @@
     <view class="post-recommend">
         <view class="post-recommend-title">
             <view class="post-recommend-title_left"></view>
-            
             <view class="post-recommend-title_mid">为你推荐的好职位</view>
             <view class="post-recommend-title_right"></view>
         </view>
-        <view class="post-recommend-list">
-            <view class="post-recommend-item">
-                <view class="post-recommend-detail">
-                    
-                </view>
+        <navigator url="" hover-class="none">
+            <view class="post-recommend-list">
+                <image mode="aspectFill" class="recommend-detail_image" src="https://www.lgstatic.com/thumbnail_100x100/i/image/M00/43/D3/Cgp3O1eEWFSARprHAABDJ7bBCBg228.png"></image>                  
+                <text class="list_job">WEB前端高级工程师</text>
+                <text class="list_money">15-30k</text>
+                <text class="list_company">即有分期</text>
+                <text class="list_address">深圳</text>
+                <text class="list_exp">3-5年</text>
+                <text class="list_education">本科</text>
+                <text class="list_date">05月16日</text>
             </view>
-        </view>
+    </navigator>
     </view>
 </view>

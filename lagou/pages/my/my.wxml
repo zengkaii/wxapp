@@ -1,2 +1,66 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+
+<view class="main">
+    <navigator hover-class="none" url="../information/information">
+        <view class="header">
+            <text class="header-username">曾凯</text>
+            <text class="about">我更帅</text>
+            <image class="thumb" src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0"></image>
+        </view>
+    </navigator>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="list">
+    <navigator hover-class="none">
+        <view class="item">
+            <view class="list_image">
+                <image src="../../images/jianli.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+            </view>
+            <view class="list_bd">简历</view>
+            <text class="list_md">完整度: 50%</text>
+            <view class="list_ft list_ft_access"></view>
+        </view>
+    </navigator>
+    <navigator hover-class="none">
+        <view class="item">
+            <view class="list_image">
+                <image src="../../images/jilu.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+            </view>
+            <view class="list_bd">投递记录</view>
+            <view class="list_ft list_ft_access"></view>
+        </view>
+    </navigator>
+    <navigator hover-class="none">
+        <view class="item">
+            <view class="list_image">
+                <image src="../../images/shoucang.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5px;"></image>
+            </view>
+            <view class="list_bd">职位收藏</view>
+            <view class="list_ft list_ft_access"></view>
+        </view>
+    </navigator>
+    <navigator hover-class="none">
+        <view class="item item_after">
+            <view class="list_image">
+                <image src="../../images/fankui.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+            </view>
+            <view class="list_bd">意见反馈</view>
+            <view class="list_ft list_ft_access"></view>
+        </view>
+    </navigator>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="list">
+    <navigator hover-class="none">
+        <view class="item .item_after">
+            <view class="list_image">
+                <image src="../../images/fabu.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+            </view>
+            <view class="list_bd">发布职位</view>
+        </view>
+    </navigator>
+</view>
+<view class="ft">
+        <view class="exit" bindtap="exit">退出当前账号</view>
+</view>
+
+    

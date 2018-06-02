@@ -1,1 +1,5 @@
-{}
+{
+    "navigationBarTitleText":"招聘排行榜",
+    "navigationBarBackgroundColor":"white",
+    "navigationBarTextStyle": "black"
+}

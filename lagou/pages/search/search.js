@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/search/search.js
 Page({
 
   /**
@@ -6,18 +6,6 @@ Page({
    */
   data: {
   
-  },
-  exit:function(){
-    wx.showModal({
-      title: '确认退出账号？',
-      success: function(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
   },
 
   /**

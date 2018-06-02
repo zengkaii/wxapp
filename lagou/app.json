@@ -3,11 +3,13 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/leaderboard/leaderboard",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/search/search",
+    "pages/information/information"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#11a983",
+    "navigationBarBackgroundColor": "#00b38a",
     "navigationBarTitleText": "拉勾",
     "navigationBarTextStyle": "white"
   },
@@ -23,13 +25,13 @@
         "selectedIconPath": "images/search2.png",
         "text": "职位"
       },
-      {
+      { 
+        "navigationBarTitleText": "招聘排行榜",
         "pagePath": "pages/leaderboard/leaderboard",
         "iconPath": "images/database.png",
         "selectedIconPath": "images/database2.png",
         "text": "排行榜"
       },
-      
       {
         "pagePath": "pages/my/my",
         "iconPath": "images/user.png",

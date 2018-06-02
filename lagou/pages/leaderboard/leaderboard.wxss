@@ -1,1 +1,112 @@
 /* pages/leaderboard/leaderboard.wxss */
+.hd{
+    height: 160rpx;
+}
+.hd image{
+    width: 100%;
+    height: 160rpx;
+}
+.md{
+    background-color: #f1ebeb;
+}
+.md view{
+    display: inline-block;
+    /* vertical-align: middle; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.md .md_left{
+    font-size: 7pt;
+    color: rgb(53, 49, 49);
+    margin-left: 150rpx;
+}
+.md .md_right{
+    font-size: 7pt;
+    color: rgb(53, 156, 50);
+    margin-left: 10rpx;
+    text-decoration: underline;
+}
+.leaderboard{
+    position: relative;
+    margin-bottom: 0;
+    height: 200rpx;
+    border-bottom: 1px solid #d9d9d9;
+}
+.leaderboard view{
+    display: inline-block;
+}
+.leaderboard-image{
+    position: absolute;
+    top: 30rpx;
+    left: 30rpx;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+.leaderboard-image image{
+
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+   
+}
+.leaderboard .leaderboard-company{
+    font-size: 12pt;
+    font-weight: 350;
+    position: absolute;
+    top: 22rpx;
+    left: 90rpx;
+}
+.leaderboard-info{
+    font-size: 7pt;
+    color: rgb(212, 205, 205);
+}
+.address{
+    margin-top: 75rpx;
+    margin-left: 90rpx;
+}
+.about{
+    margin-top: 75rpx;
+    margin-left: 10rpx;
+}
+.jobs{
+    margin-top: 75rpx;
+    margin-left: 10rpx;
+}
+.leaderboard-company-image{
+    float: right;
+    margin-top: 30rpx;
+    margin-right: 20rpx;
+}
+.leaderboard-company-image image{
+    width: 90rpx;
+    height: 90rpx;
+}
+.leaderboard-creater{
+    position: absolute;
+    top: 120rpx;
+    left: 90rpx;
+}
+.leaderboard-creater .creater{
+    margin-top: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+}
+.create-info{
+    font-size: 7pt;
+    color: rgb(53, 48, 48);
+    margin-left: 20rpx;
+    vertical-align: top;
+    margin-top: 15rpx;
+    /* margin-top: 0; */
+}
+.create-exposure{
+    font-size: 7pt;
+    color: rgb(228, 25, 25);
+    margin-left: 8rpx;
+    vertical-align: top;
+    margin-top: 15rpx;
+    background-color: rgba(235, 139, 75, 0.123);
+}

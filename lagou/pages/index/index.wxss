@@ -1,16 +1,14 @@
 
 .post-search{
-  background-color:#11a983;
-  height: 210rpx;
+  background-color:#00b38a;
+  height: 270rpx;
+  text-align: center;
 }
 .post-search image{
-  width: 100rpx;
-  height: 100rpx;
-  margin-bottom: 10rpx;
-  margin-left: 320rpx;
-}
-.post-search-bar{
-  /* position: relative; */
+  width:150rpx;
+  height: 150rpx;
+  /* margin-bottom: 10rpx; */
+  /* margin-left: 320rpx; */
   
 }
 .post-icon-search_in-box{
@@ -21,14 +19,14 @@
 }
 .post-search-bar__input{
 
-   padding-top: 2rpx;
-   padding-bottom: 2rpx;
+   padding-top: 12rpx;
+   padding-bottom: 12rpx;
   background-color: white;
   color: #d9d9d9;
   font-size: 10pt;
   text-align: center;
-  margin-left: 50rpx;
-  margin-right: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   border-radius: 50rpx;
 }
 
@@ -55,4 +53,76 @@
   width: 100rpx;
   border-top:1px solid #d9d9d9;
 }
+.post-recommend-list{
+  position: relative;
+  /* width: 100%; */
+  height: 150rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  border-bottom: 1px solid #d9d9d9;
+  
+}
+/* .post-recommend-list image,text{
+  display: inline-block;
+} */
+.recommend-detail_image{
+  width: 120rpx;
+  height: 120rpx;
+  /* margin-right: 20rpx; */
+}
+.post-recommend .post-recommend-list .list_job{
+  position: absolute;
+  top: 0;
+  left: 130rpx;
+  font-size: 10pt;
+  font-weight: 350;
+}
+.post-recommend .post-recommend-list .list_money{
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+  color: red;
+  font-size: 8pt;
+}
+.post-recommend .post-recommend-list .list_company{
+  position: absolute;
+  top: 45rpx;
+  left: 130rpx;
+  font-size: 9pt;
+  color: #2e2a2a;
+  /* vertical-align: middle; */
+}
+.post-recommend .post-recommend-list .list_address{
+
+  margin-left: 12rpx;
+
+  color: #d9d9d9;
+  font-size: 8pt;
+
+}
+.post-recommend .post-recommend-list .list_exp{
+
+  margin-left: 30rpx;
+
+  color: #d9d9d9;
+
+  font-size: 8pt;
+}
+.post-recommend .post-recommend-list .list_education{
+  margin-left: 30rpx;
+
+  color: #d9d9d9;
+
+  font-size: 8pt;
+}
+.post-recommend .post-recommend-list .list_date{
+  position: absolute;
+  right: 20rpx;
+  top: 100rpx;
+  color: #d9d9d9;
+  font-size: 8pt;
+}
+
+
 
