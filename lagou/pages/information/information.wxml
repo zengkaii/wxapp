@@ -1,2 +1,57 @@
-<!--pages/information/information.wxml-->
-<text>pages/information/information.wxml</text>
+
+<view class="scan">
+    <view class="scan-image">
+        <image src="../../images/scan.png" mode="aspectFill"></image>
+    </view>
+    <view class="scan-title">扫码用电脑编辑简历，体验更好 </view>
+    <view class="scan-to"></view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="info" style="height: 350rpx;">
+    <view class="info-ft">
+        <view class="info-ft_name">曾凯</view>
+        <view class="info-ft_eidt">
+            <image src="../../images/edit.png" mode="aspectFill"></image>
+            <view class="edit">编辑</view>
+        </view>
+        <view class="info-ft_image">
+            <image src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0" mode="aspectFill"></image>
+        </view>
+    </view>
+    <view class="info-md">
+        <view class="info-md_address">/南昌市</view>
+        <view class="info-md_education">/本科</view>
+        <view class="info-md_student">/应届毕业生</view>
+        <view class="info-md_descript">我更帅</view>
+    </view>
+    <view class="info-ft">
+        <view class="info-ft-phone">
+            <view class="phone">
+                <image src="../../images/phone.png"></image>
+            </view>
+            <view class="__phone">15970107373</view>
+        </view>
+        <view class="info-ft-email">
+            <view class="email">
+                <image src="../../images/email.png"></image>
+            </view>
+            <view class="__email">1965599425@qq.com</view>
+        </view>
+    </view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="forjob">
+    <view class="forjob-hd">
+        <view class="forjob-hd__left">求职意向</view>
+        <view class="forjob-hd__right">编辑</view>
+    </view>
+    <view class="forjob-bd">
+        <image class="left" src="../../images/qianduan.png"></image>
+        <image class="right" src="../../images/dingwei.png"></image>
+    </view>
+    <view class="forjob-ft">
+        <view class="image-left">前端</view>
+        <view class="image-right">深圳</view>
+    </view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>

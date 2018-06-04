@@ -1,1 +1,182 @@
 /* pages/information/information.wxss */
+
+.scan{
+    position: relative;
+    border-top: 1px solid #d9d9d9;
+}
+.scan view{
+    display: inline-block;
+}
+.scan .scan-image image{
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.scan .scan-title{
+    position: absolute;
+    font-size: 9pt;
+    top: 20rpx;
+    left: 125rpx;
+}
+.scan-to{
+    padding-right:50rpx;
+}
+.scan-to::after{
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 1px 1px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 20px;
+}
+.info-ft view{
+    display: inline-block;
+}
+.info-ft .info-ft_name{
+    font-size: 13pt;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.info-ft_eidt image{
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: 30rpx;
+}
+.info-ft_eidt .edit{
+    margin-left: 7rpx;
+    font-size:9pt;
+    color: #d9d9d9;
+}
+.info-ft_image{
+    float: right;
+    margin-top: 30rpx;
+    margin-right: 30rpx;
+}
+.info-ft_image image{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+}
+.info-md{
+    position: relative;
+    margin-left: 30rpx;
+    margin-top: -10rpx;
+    margin-right: 200rpx;
+}
+.info-md view{
+    display: inline-block;
+    font-size: 9pt;
+}
+.info-md_descript{
+    position: absolute;
+    top: 50rpx;
+    left: 0rpx;
+    color: #d9d9d9;
+}
+.info-ft{
+    font-size: 9pt;
+}
+.info-ft{
+    position: relative;
+}
+.info-ft-phone{
+    
+    position: absolute;
+    top: 80rpx;
+    left: 30rpx;
+}
+.info-ft-phone view{
+    display: inline-block;
+}
+.info-ft-phone .__phone{
+    margin-left: 20rpx;
+}
+.info-ft-email{
+    position: absolute;
+    top: 130rpx;
+    left: 30rpx;
+}
+.info-ft-email .__email{
+    margin-left: 20rpx;
+}
+.phone{
+    vertical-align: middle;
+}
+.phone image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.email{
+    vertical-align: middle;
+}
+.email image{
+    width: 25rpx;
+    height: 25rpx;
+}
+.forjob-hd{
+    /* margin-top: 30rpx;
+    margin-left: 30rpx; */
+    position: relative;
+}
+.forjob-hd view{
+    display: inline-block;
+}
+.forjob-hd__left{
+    font-size: 10pt;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+}
+.forjob-hd__right{
+    font-size: 9pt;
+    color: #21ad43;
+    position: absolute;
+    top: 25rpx;
+    right: 30rpx;
+    /* float: right; */
+    /* margin-right: 30rpx; */
+}
+.forjob-bd{
+    margin-top: 30rpx;
+}
+
+.forjob-bd image{    
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.forjob-bd .left{
+    /* margin-top: 30rpx; */
+    margin-left: 32rpx;
+}
+.forjob-bd .right{
+    /* margin-top: 30rpx; */
+    margin-left: 100rpx;
+}
+.forjob-ft
+{
+    margin-top: 0;
+}
+.forjob-ft view{
+    vertical-align: top;
+    display: inline-block;
+    font-size: 9pt;
+}
+.forjob-ft .image-left{
+    margin-top: 0;
+    margin-left: 30rpx;
+}
+.forjob-ft .image-right{
+    margin-top: 0;
+    margin-left: 90rpx;
+}
