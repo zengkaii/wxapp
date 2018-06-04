@@ -1,2 +1,12 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<easy-modal  
+      id="easyModal" 
+      title="这个是标题 01"   
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEventFirst"  
+      >  <view class='modal-content'>
+             <text> 这是内容部分 01 </text>     
+             <text> 这是内容部分 01 </text>     
+             <text> 这是内容部分 01 </text>                                             
+      </view>    
+
+</easy-modal>

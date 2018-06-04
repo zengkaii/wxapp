@@ -10,7 +10,7 @@
 </view>
 <view style="background-color: #fcf8f8; height: 15rpx;"></view>
 <view class="list">
-    <navigator hover-class="none">
+    <navigator hover-class="none" url="../resume/resume">
         <view class="item">
             <view class="list_image">
                 <image src="../../images/jianli.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
@@ -49,15 +49,23 @@
     </navigator>
 </view>
 <view style="background-color: #fcf8f8; height: 15rpx;"></view>
-<view class="list">
-    <navigator hover-class="none">
+<view class="list" bindtap="postJobtap">
         <view class="item .item_after">
             <view class="list_image">
                 <image src="../../images/fabu.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
             </view>
             <view class="list_bd">发布职位</view>
         </view>
-    </navigator>
+</view>
+<view class="downloadapp" hidden="true">
+    <view class="download_app_modal">
+            <image class="top-img" src="https://static.lagou.com/wx-mina/static/asset/lagou-mina/logo_098b771.png"></image>
+            <view class="tips">
+                <view>去应用商店下载拉勾APP</view>
+                <view>即可发布职位</view>
+            </view>
+            <view class="know">知道啦</view>
+    </view>
 </view>
 <view class="ft">
         <view class="exit" bindtap="exit">退出当前账号</view>

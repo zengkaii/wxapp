@@ -55,3 +55,75 @@
     </view>
 </view>
 <view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="add">
+    <view class="addImage">
+        <image src="../../images/add.png"></image>
+    </view>
+    <view class="addDescript">添加实习经历</view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="education">
+    <view class="education-hd">
+        <view class="education-hd__top">教育经历</view>
+    </view>
+    <view class="education-bd">
+        <view class="education-bd__left">
+            <image src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3714253733,2805429165&fm=58&bpow=884&bpoh=920" mode="aspectFill"></image>
+        </view>
+        <view class="education-bd__mid">
+            <view class="education-bd__mid__top">东华理工大学</view>
+            <view class="education-bd__mid__mid">本科/软件工程</view>
+            <view class="education-bd__mid__ft">2019年毕业（预计）</view>
+        </view>
+        <view class="education-bd__right">
+            <view>编辑</view>
+        </view>
+        
+    </view>
+    <view class="add education-ft">
+            <view class="addImage">
+                <image src="../../images/add.png"></image>
+            </view>
+            <view class="addDescript">添加教育经历</view>
+        </view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="add">
+    <view class="addImage">
+        <image src="../../images/add.png"></image>
+    </view>
+    <view class="addDescript">添加项目经历</view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="userDescript">
+    <view class="userDescript-hd">
+        <view class="userDescript-hd-left">自我描述</view>
+        <view class="userDescript-hd-right">编辑</view>
+    </view>
+    <view class="userDescript-bd">
+        <text>1 熟练掌握原生Js编程，从es5到es6，擅长es6风格代码的编写
+              2 掌握命令行开发环境，node的全栈开发方式，掌握npm，yarn的使用
+              3 掌握HTML5/CSS3界面构建，并对svg高交互良好用户体验的HTML5     
+                作品有一定的开发经验；熟练掌握stylus高效css开发               
+                学习内容：   
+               《JavaScript语言精粹》 
+                京东凹凸实验室出品《掘金小册》
+               《大厂UI开发实战手册》
+        </text>
+    </view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="add">
+        <view class="addImage">
+            <image src="../../images/add.png"></image>
+        </view>
+        <view class="addDescript">添加自定义模块</view>
+</view>
+<view class="instruction">
+    <text>
+        简历更新于2018-05-30 11:17
+        社交账号、作品展示、技能评价暂不支持编辑
+        如需编辑，请滑动到最上方用电脑编辑
+        Powered by Lagou.com
+    </text>
+</view>

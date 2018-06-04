@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/resume/resume.js
 Page({
 
   /**
@@ -7,29 +7,8 @@ Page({
   data: {
   
   },
-  exit(){
-    wx.showModal({
-      title: '确认退出账号？',
-      success: function(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
-  },
-  // postJobtap(){
-  //   wx.showModal({
-  //     image:'../../images/logo.png',
-  //     showCancel:false,
-  //     confirmText:'知道啦',
-  //     content:'去应用商店下载拉勾APP即可发布职位'
-  //   })
-      
-  // },
 
-  /** 
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {

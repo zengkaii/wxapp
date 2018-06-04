@@ -1,0 +1,22 @@
+<navigator hover-class="none" url="../information/information">
+    <view class="item">
+        <view class="list_bd">在线简历</view>
+        <text class="list_md">完整度: 50%</text>
+        <view class="list_ft list_ft_access"></view>
+    </view>
+</navigator>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="item">
+    <view class="list_bd">上传简历</view>
+    <text class="list_md">上传附件简历</text>
+    <view class="list_ft list_ft_access"></view>
+</view>
+<view style="background-color: #fcf8f8; height: 15rpx;"></view>
+<view class="item">
+    <view class="list_bd">选择默认投递</view>
+    <text class="list_md">没有默认简历</text>
+    <view class="list_ft list_ft_access"></view>
+</view>
+<view class="list">
+    <text class="list">今日已投递: 0/10</text>
+</view>

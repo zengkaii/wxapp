@@ -55,7 +55,7 @@
 .info-ft_eidt .edit{
     margin-left: 7rpx;
     font-size:9pt;
-    color: #d9d9d9;
+    color: #a59f9f;
 }
 .info-ft_image{
     float: right;
@@ -63,8 +63,8 @@
     margin-right: 30rpx;
 }
 .info-ft_image image{
-    width: 130rpx;
-    height: 130rpx;
+    width: 120rpx;
+    height: 120rpx;
     border-radius: 50%;
 }
 .info-md{
@@ -81,7 +81,7 @@
     position: absolute;
     top: 50rpx;
     left: 0rpx;
-    color: #d9d9d9;
+    color: #a59f9f;
 }
 .info-ft{
     font-size: 9pt;
@@ -179,4 +179,112 @@
 .forjob-ft .image-right{
     margin-top: 0;
     margin-left: 90rpx;
+}
+.add{
+    display: flex;
+    justify-content: center;
+}
+.add view{
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+}
+
+.addImage image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.addDescript{
+    font-size: 10pt;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
+.education{
+    padding-right: 30rpx;
+    padding-left: 30rpx;
+}
+.education-hd .education-hd__top{
+    font-size: 10pt;
+    margin-top: 20rpx;
+
+}
+.education-bd{
+    margin-top: 40rpx;
+
+}
+.education-bd view{
+    display: inline-block;
+}
+.education-bd .education-bd__left image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.education-bd__mid{
+    margin-left: 30rpx;
+}
+.education-bd__mid view{
+    display: flex;
+    flex-direction: row;
+    font-size: 9pt;
+    color: #a59f9f;
+}
+.education-bd__mid .education-bd__mid__top{
+    font-size: 10pt;
+    color: #000000;
+    margin-top: 0;
+}
+.education-bd__right{
+    font-size: 9pt;
+    color: #21ad43;
+    float: right;
+}
+.education-ft{
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20rpx;
+    padding-right: 30rpx;
+    padding-left: 30rpx;
+}
+.userDescript-hd{
+    /* display: flex; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+}
+
+.userDescript{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.userDescript-hd .userDescript-hd-left{
+    font-size: 10pt;
+}
+.userDescript-hd .userDescript-hd-right{
+    /* margin-right: 0; */
+    /* margin-left: 100rpx; */
+    font-size: 9pt;
+    color: #21ad43;
+}
+.userDescript-bd{
+    line-height: 30rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+
+}
+.userDescript-bd text{
+    line-height: 10px;
+    font-size: 9pt;
+    color: #a59f9f;
+    letter-spacing: 0.8px;
+}
+.instruction{
+    text-align: center;
+    line-height: 30rpx;
+    background-color: #fcf8f8;
+    padding-top: 50rpx;
+    padding-bottom: 100rpx;
+}
+.instruction text{
+    
+    font-size: 8pt;
+    color: #a59f9f;
 }

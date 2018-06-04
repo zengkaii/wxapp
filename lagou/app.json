@@ -1,13 +1,12 @@
 {
   "pages": [
-     
     "pages/index/index",
     "pages/logs/logs",
     "pages/leaderboard/leaderboard",
     "pages/my/my",
     "pages/search/search",
-    "pages/information/information"
-   
+    "pages/information/information",
+    "pages/resume/resume"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,7 +26,7 @@
         "selectedIconPath": "images/search2.png",
         "text": "职位"
       },
-      { 
+      {
         "navigationBarTitleText": "招聘排行榜",
         "pagePath": "pages/leaderboard/leaderboard",
         "iconPath": "images/database.png",
