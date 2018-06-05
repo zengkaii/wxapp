@@ -75,7 +75,6 @@ Page({
         })
       }
       if (vtotal == total){
-        console.log('可以全选了');
         this.setData({
           selectAllStatus: true
         })

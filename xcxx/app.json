@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/menu/menu",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/wave/wave"
   ],
   "window": {
     "backgroundTextStyle": "light",

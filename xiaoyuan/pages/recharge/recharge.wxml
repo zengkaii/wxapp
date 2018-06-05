@@ -33,7 +33,7 @@
         bindchange="bindAmountChange"
         class="weui-flex">
           <label wx:for="{{amounts}}" wx:key="{{index}}">
-            <radio class="weui-check" value="{{item.value}}"/>
+            <radio class="weui-check" />
             <!-- checked bindAmountChange 值多少 结合起来 -->
             <view class="weui-check__label {{item.checked?'checked':''}}">
               <text>¥ {{item.value}}</text>

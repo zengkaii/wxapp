@@ -1,2 +1,8 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="main">
+    <!-- 头像 太大 技巧 三个元素，头像 名字， 关于 垂直对齐 -->
+    <view class="header">
+        <open-data class="thumb" type="userAvatarUrl"></open-data>
+        <open-data class="nickname" type="userNickName" lang="zh_CN"></open-data>
+        <text class="about">关于我们</text>
+    </view>
+</view>
