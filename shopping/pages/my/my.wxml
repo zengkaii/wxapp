@@ -1,2 +1,5 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="main">
+    <div class="header">
+        <open-data class="thumb" type="userAvatarurl"></open-data>
+    </div>
+</view>

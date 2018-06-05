@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一转到底",
+    "navigationBarTextStyle":"black"
+  }
+}

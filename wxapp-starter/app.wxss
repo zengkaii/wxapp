@@ -39,3 +39,12 @@ page{
 
     }
 }
+.deleteicon{
+    position: relative;
+    left: 79px;
+    /* left: 79px;
+    top: 5px; */
+    /* left: 79px; */
+    color: red;
+    
+}
