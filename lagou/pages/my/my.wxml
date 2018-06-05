@@ -38,13 +38,15 @@
             <view class="list_ft list_ft_access"></view>
         </view>
     </navigator>
-    <view class="item item_after" bindtap="toChart">
-        <view class="list_image">
-            <image src="../../images/fankui.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+    <navigator hover-class="none">
+        <view class="item item_after">
+            <view class="list_image">
+                <image src="../../images/fankui.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
+            </view>
+            <view class="list_bd">意见反馈</view>
+            <view class="list_ft list_ft_access"></view>
         </view>
-        <view class="list_bd">意见反馈</view>
-        <view class="list_ft list_ft_access"></view>
-    </view>
+    </navigator>
 </view>
 <view style="background-color: #fcf8f8; height: 15rpx;"></view>
 <view class="list" bindtap="postJobtap">

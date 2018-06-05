@@ -17,15 +17,15 @@
             <view class="post-recommend-title_right"></view>
         </view>
         <navigator url="" hover-class="none">
-            <view class="post-recommend-list" wx:for="{{jobs}}" wx:key="item">
-                <image mode="aspectFill" class="recommend-detail_image" src="{{item.image}}"></image>                  
-                <text class="list_job">{{item.job}}</text>
-                <text class="list_money">{{item.money}}</text>
-                <text class="list_company">{{item.company}}</text>
-                <text class="list_address">{{item.address}}</text>
-                <text class="list_exp">{{item.exp}}</text>
-                <text class="list_education">{{item.education}}</text>
-                <text class="list_date">{{item.date}}</text>
+            <view class="post-recommend-list">
+                <image mode="aspectFill" class="recommend-detail_image" src="https://www.lgstatic.com/thumbnail_100x100/i/image/M00/43/D3/Cgp3O1eEWFSARprHAABDJ7bBCBg228.png"></image>                  
+                <text class="list_job">WEB前端高级工程师</text>
+                <text class="list_money">15-30k</text>
+                <text class="list_company">即有分期</text>
+                <text class="list_address">深圳</text>
+                <text class="list_exp">3-5年</text>
+                <text class="list_education">本科</text>
+                <text class="list_date">05月16日</text>
             </view>
     </navigator>
     </view>

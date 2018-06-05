@@ -7,21 +7,21 @@
         <view class="md_right" bindtap="ToBoardTap">如何上榜？</view>
     </view>
     <view class="ft">
-        <view class="leaderboard" wx:for="{{leaderboard}}" wx:key="index">
+        <view class="leaderboard">
             <view class="leaderboard-image">
-                <image src="{{item.No}}"></image>
+                <image src="../../images/top.png"></image>
             </view>
-            <view class="leaderboard-company">{{item.company}}</view>
-            <view class="leaderboard-info address">{{item.address}} /</view>
-            <view class="leaderboard-info about">{{item.about}} /</view>
-            <view class="leaderboard-info jobs">{{item.jobs}}</view>
+            <view class="leaderboard-company">深圳金达数据科技有限公司</view>
+            <view class="leaderboard-info address">深圳 /</view>
+            <view class="leaderboard-info about">移动互联网 金融 /</view>
+            <view class="leaderboard-info jobs">30个在招职位</view>
             <view class="leaderboard-company-image">
-                <image src="{{item.image}}"></image>
+                <image src="https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png"></image>
             </view>
             <view class="leaderboard-creater">
-                <image class="creater" src="{{item.creater_image}}"></image>
-                <view class="create-info">{{item.creater}}</view>
-                <view class="create-exposure">{{item.exposure}}</view>
+                <image class="creater" src="https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png"></image>
+                <view class="create-info">David · 创始人</view>
+                <view class="create-exposure">9941 · 曝光度</view>
             </view>
         </view>
     </view>

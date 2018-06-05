@@ -19,18 +19,15 @@ Page({
       }
     })
   },
-  toChart(){
-
-  
-  },
-  postJobtap(){
-    wx.showModal({
-      showCancel:false,
-      confirmText:'知道啦',
-      content:'去应用商店下载拉勾APP\n即可发布职位'
-    })
+  // postJobtap(){
+  //   wx.showModal({
+  //     image:'../../images/logo.png',
+  //     showCancel:false,
+  //     confirmText:'知道啦',
+  //     content:'去应用商店下载拉勾APP即可发布职位'
+  //   })
       
-  },
+  // },
 
   /** 
    * 生命周期函数--监听页面加载

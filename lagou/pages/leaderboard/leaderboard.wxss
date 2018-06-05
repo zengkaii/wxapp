@@ -77,7 +77,7 @@
 .leaderboard-company-image{
     float: right;
     margin-top: 30rpx;
-    margin-right: 30rpx;
+    margin-right: 20rpx;
 }
 .leaderboard-company-image image{
     width: 90rpx;

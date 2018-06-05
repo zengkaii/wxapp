@@ -27,8 +27,7 @@
                 <view class="uploader__files">
                     <block wx:for="{{images}}" wx:key="{{item.id}}">
                         <view class="uploader__file">
-                            <i class="deleteicon" bindtap="deleteicon">x</i>
-                            <image mode="aspectFill" class="uploader__img" src="{{item.path}}" ></image>
+                            <image mode="aspectFill" class="uploader__img" src="{{item.path}}"></image>
                         </view>
                     </block>
                 </view>

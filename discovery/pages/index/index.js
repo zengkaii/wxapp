@@ -20,7 +20,7 @@ Page({
   readMore(event) {
     const id=event.target.dataset.id;
     wx.navigateTo({
-      url: `/pages/vehicles/vehicles?id=${id}`,   
+      url: `/pages/vehicles/vehicles?id=${id}`,
       success: function(res){
         // success
       },

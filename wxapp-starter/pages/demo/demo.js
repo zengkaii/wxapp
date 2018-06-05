@@ -94,8 +94,5 @@ Page({
         })
       }
     })
-  },
-  deleteicon(e){
-
   }
 })
