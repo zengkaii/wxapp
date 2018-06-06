@@ -1,0 +1,29 @@
+<view class="main">
+    <view class="login-hd">
+        <view class="login-hd__left">登录拉勾</view>
+        <view class="login-hd__right">注册</view>
+    </view>
+    <view class="login-bd">
+        <view class="login-bd-phnumber">
+            <view class="select">+86</view>
+            <view class="phone">
+                <!-- <input type="text"/> -->
+                <input type="text" placeholder="请输入您的手机号" comfirm-type="done"/>
+            </view>
+        </view>
+        <view class="login-bd-comfirm">
+            <view class="login-bd-comfirm-input">
+                <input type="text" placeholder="请输入收到的验证码"/>
+            </view>
+            <view class="login-bd-comfirm-get">获取验证码</view>
+        </view>
+    </view>
+    <view class="login-btn">
+        <button class="btn" bindtap="btnTap">登录</button>
+    </view>
+    <view class="login-detail">
+        <view class="detail">登录拉勾代表你已同意</view>
+        <view class="detail-know">《拉勾用户协议》</view>
+    </view>
+    <view class="login-password">密码登录</view>
+</view>
