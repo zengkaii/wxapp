@@ -1,1 +1,106 @@
-/* pages/search/search.wxss */
+
+.search-top{
+    background-color: #fff;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 30rpx;
+    /* margin-bottom: 10rpx; */
+    position: relative;
+}
+.search-top view{
+    display: inline-block;
+    font-size: 10pt;
+
+}
+.search-top-input{
+    width: 610rpx;
+}
+.search-top-select{
+    position: absolute;
+    top: 35rpx;
+    /* left: 30rpx; */
+}
+.search-top-select::after{
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 1px 1px 0 0;
+    border-color: #000;
+    border-style: solid;
+    /* -webkit-transform: matrix(0.4, 0.4, -0.4, 0.4, 0, 0); */
+    /* transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0); */
+    transform: rotateZ(135deg);
+    position: relative;
+    top: -2rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -10rpx;
+    left: 85rpx;
+}
+.search-top-input input{
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50rpx;
+    margin-left: 120rpx;
+    line-height: 50rpx;
+}
+.search-top-cancel{
+
+    position: absolute;
+    top: 35rpx;
+    right: 30rpx;
+}
+.search-history{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.search-history-title{
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background-color: #d9d9d9;
+    /* margin-top: 5rpx; */
+    display: flex;
+    justify-content: space-between;
+}
+.search-history-title text{
+    font-size: 10pt;
+}
+.search-history-title image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.search-history-detail{
+        background-color: #d9d9d9;
+}
+.search-history-detail view{
+    display: inline-block;
+
+}
+.history-detail{
+    margin-bottom: 30rpx;
+    margin-top: 20rpx;
+    margin-left: 30rpx;
+
+}
+ .history-detail text{
+
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    padding-right: 20rpx;
+    padding-left: 20rpx;
+    border-radius: 50rpx;
+    background-color: #fff;
+    color: #000;
+    font-size: 9pt;
+    text-align: center;
+
+}
+page{
+    height: 100%;
+    background-color: #d9d9d9;
+}
+
+
+

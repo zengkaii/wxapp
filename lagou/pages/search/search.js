@@ -5,7 +5,75 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    status:false,
+    history:[
+      {
+        list:'前端工程师'
+      },
+      {
+        list:'前端工程师'
+      },
+      {
+        list:'前端'
+      },
+      {
+        list:'前端工程师'
+      },
+      {
+        list:'前端工程师'
+      },
+      {
+        list:'前端工程师'
+      }
+    ],
+    like:[
+      {
+        ls:'数据挖掘'
+      },
+      {
+        ls:'高级测试工程师'
+      },
+      {
+        ls:'产品运营'
+      },
+      {
+        ls:'英语'
+      },
+      {
+        ls:'汽车'
+      },
+      {
+        ls:'教育'
+      }
+    ]
+  },
+  cancelTap(){
+    wx.navigateBack({
+      delta:1
+    })
+  },
+  deleteHistory(){
+    var that=this;
+    const status=this.data.status;
+    wx.showModal({
+     
+      content:'确定删除全部搜索历史？',
+      confirmText:'全部删除',
+      success:function(res){
+        if(res.confirm){
+          that.setData({
+              status:true,
+                
+          })
+        console.log(typeof(status));
+        }else if(res.cancel)
+        {
+          that.setData({
+              status:false
+          })
+        } 
+      }
+    })
   },
 
   /**
