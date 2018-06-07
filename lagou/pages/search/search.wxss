@@ -59,7 +59,7 @@
     padding-top: 30rpx;
     padding-left: 30rpx;
     padding-right: 30rpx;
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
     /* margin-top: 5rpx; */
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@
     height: 40rpx;
 }
 .search-history-detail{
-        background-color: #d9d9d9;
+        /* background-color: #d9d9d9; */
 }
 .search-history-detail view{
     display: inline-block;
@@ -86,8 +86,8 @@
 }
  .history-detail text{
 
-    padding-top: 5rpx;
-    padding-bottom: 5rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
     padding-right: 20rpx;
     padding-left: 20rpx;
     border-radius: 50rpx;
@@ -99,7 +99,7 @@
 }
 page{
     height: 100%;
-    background-color: #d9d9d9;
+    background-color: #eee8e8;
 }
 
 

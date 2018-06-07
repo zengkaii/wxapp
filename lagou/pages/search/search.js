@@ -1,15 +1,15 @@
 // pages/search/search.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
+
   data: {
     status:false,
+    inputsearch:'',
     history:[
-      {
-        list:'前端工程师'
-      },
       {
         list:'前端工程师'
       },
@@ -17,14 +17,9 @@ Page({
         list:'前端'
       },
       {
-        list:'前端工程师'
-      },
-      {
-        list:'前端工程师'
-      },
-      {
-        list:'前端工程师'
+        list:'字节跳动'
       }
+
     ],
     like:[
       {
@@ -46,6 +41,24 @@ Page({
         ls:'教育'
       }
     ]
+  },
+  onsearch(){
+    this.setData({
+      list:'ssss'
+    });
+    console.log('ssssss');
+  },
+  inputSearchTap:function(e){
+    this.setData({
+      inputsearch: e.detail.value,
+     
+    }) ;
+    if(e.detail.value==='前端'){
+      wx.navigateTo({
+        url: '../detail/detail',
+      })
+    }
+    // console.log('1111');
   },
   cancelTap(){
     wx.navigateBack({

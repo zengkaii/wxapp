@@ -1,0 +1,39 @@
+<view class="main">
+    <view class="detail-company">
+        <view class="detail-company-left">
+            <view class="top">知识圈</view>
+            <view class="md">
+                <view class="address">广州/</view>
+                <view class="about">移动互联网,教育/</view>
+                <view class="financing">A轮/</view>
+            </view>
+            <view class="ft">15-50人</view>
+        </view>
+        <view class="detail-company-right">
+            <image src-="https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png"></image>
+            
+        </view>
+    </view>
+    <view class="detail-visitor">
+        <view class="detail-visitor-sum">历史访问1730，今日访客:</view>
+        <view class="detail-visitor-image">
+            <view class="image">
+                <image src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0"></image>
+                <image src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0"></image>
+                <image src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0"></image>
+                <image src="https://wx.qlogo.cn/mmhead/Q3auHgzwzM6Hjm96EFvdvxbTDQshgC1vp34VhzFtEXibTyrGq35PNzA/0"></image>
+            </view>
+            <view class="imagemore">
+                <image src="../../images/more.png"></image>
+            </view>
+            <view class="like">
+                <image src="../../images/like.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="detail-about">
+        <view class="detail-about-more">
+            公司详情
+        </view>
+    </view>
+</view>

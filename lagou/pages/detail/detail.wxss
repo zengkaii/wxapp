@@ -1,0 +1,97 @@
+/* pages/detail/detail.wxss */
+page{
+    background-color: rgb(216, 211, 211);
+}
+.main{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background-color: #fff;
+}
+.detail-company{
+    padding-top: 50rpx;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50rpx;
+    border-bottom: 1px solid #d9d9d9;
+}
+.detail-company-left .top{
+    font-size: 14pt;
+    font-weight: 500;
+}
+.detail-company-left .md{
+    font-size: 10pt;
+}
+.detail-company-left .md view{
+    display: inline-block;
+} 
+.detail-company-left .ft{
+    font-size: 10pt;
+}
+.detail-company-right image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.detail-visitor{
+    margin-top: 50rpx;
+    padding-bottom: 50rpx;
+}
+.detail-visitor-sum{
+    font-size: 10pt;
+    letter-spacing: 1px;
+    margin-bottom: 15rpx;
+}
+.detail-visitor-image{
+    position: relative;
+}
+.detail-visitor-image view{
+    display:inline-block;
+
+}
+.detail-visitor-image .image{
+    width: 350rpx;
+    height: 70rpx;
+   overflow: hidden;
+}
+.detail-visitor-image .image image{
+     margin-left: 20rpx;
+}
+.detail-visitor-image .image image:first-child{
+    margin-left: 0;
+}
+.detail-visitor-image .like{
+    position: absolute;
+    right: 60rpx;
+}
+.imagemore{
+    position: absolute;
+    right: 150rpx;
+    padding-right: 30rpx;
+    border-right: 1px solid #d9d9d9;
+    /* float: right; */
+    /* margin-left: 80rpx; */
+    /* padding-right: rpx; */
+
+}
+
+
+.detail-visitor-image .image image{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    
+}
+.detail-visitor-image .imagemore image{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+} 
+.detail-visitor-image .like image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.detail-about{
+    margin-top: 20rpx;
+    /* height: 200rpx; */
+    /* overflow: hidden; */
+}

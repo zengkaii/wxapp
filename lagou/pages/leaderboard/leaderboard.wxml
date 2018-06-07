@@ -6,23 +6,25 @@
         <view class="md_left">以下是前100名的招聘官，榜单实时更新</view>
         <view class="md_right" bindtap="ToBoardTap">如何上榜？</view>
     </view>
-    <view class="ft">
-        <view class="leaderboard" wx:for="{{leaderboard}}" wx:key="index">
-            <view class="leaderboard-image">
-                <image src="{{item.No}}"></image>
-            </view>
-            <view class="leaderboard-company">{{item.company}}</view>
-            <view class="leaderboard-info address">{{item.address}} /</view>
-            <view class="leaderboard-info about">{{item.about}} /</view>
-            <view class="leaderboard-info jobs">{{item.jobs}}</view>
-            <view class="leaderboard-company-image">
-                <image src="{{item.image}}"></image>
-            </view>
-            <view class="leaderboard-creater">
-                <image class="creater" src="{{item.creater_image}}"></image>
-                <view class="create-info">{{item.creater}}</view>
-                <view class="create-exposure">{{item.exposure}}</view>
+    <navigator hover-class="none" url="../detail.detail">
+        <view class="ft">
+            <view class="leaderboard" wx:for="{{leaderboard}}" wx:key="index">
+                <view class="leaderboard-image">
+                    <image src="{{item.No}}"></image>
+                </view>
+                <view class="leaderboard-company">{{item.company}}</view>
+                <view class="leaderboard-info address">{{item.address}} /</view>
+                <view class="leaderboard-info about">{{item.about}} /</view>
+                <view class="leaderboard-info jobs">{{item.jobs}}</view>
+                <view class="leaderboard-company-image">
+                    <image src="{{item.image}}"></image>
+                </view>
+                <view class="leaderboard-creater">
+                    <image class="creater" src="{{item.creater_image}}"></image>
+                    <view class="create-info">{{item.creater}}</view>
+                    <view class="create-exposure">{{item.exposure}}</view>
+                </view>
             </view>
         </view>
-    </view>
+    </navigator>
 </view>
