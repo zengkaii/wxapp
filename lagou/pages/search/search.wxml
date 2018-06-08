@@ -2,15 +2,14 @@
       <view class="search-top">
             <view class="search-top-select">深圳</view>
             <view class="search-top-input">
-                  <!-- <icon class="search-top-icon" type="search" size="14"></icon> -->
+                 
                   <input type="text" placeholder="搜索公司/职位" auto-focus="true" value="{{inputsearch}}" 
-                  bindcofirm="onsearch"
+                  bindconfirm="search"
                   bindinput="inputSearchTap"/>
             </view>
-            <!-- <navigator hover-class="none" url="../index/index"> -->
+
                   <view class="search-top-cancel" bindtap="cancelTap">取消</view>
-                  <!-- <view class="search-top-cancel" bindtap="comfirmTap">完成</view> -->
-            <!-- </navigator> -->
+
       </view>
       <view class="search-history" hidden="{{status}}">
             <view class="search-history-title">

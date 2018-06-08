@@ -1,89 +1,13 @@
 // pages/leaderboard/leaderboard.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      leaderboard:[
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-        {
-          No:'../../images/top.png',
-          company:'深圳金达数据科技有限公司',
-          address:'深圳',
-          about:'移动互联网 金融',
-          jobs:'30个在招职位',
-          image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater_image:'https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png',
-          creater:'David · 创始人',
-          exposure:'9941 · 曝光度'
-        },
-      ]
+      leaderboard:[],
+
   },
   ToBoardTap(){
     wx.showModal({
@@ -91,19 +15,41 @@ Page({
       showCancel:false
     })
   },
+ 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    wx.request({
+      url:'https://www.easy-mock.com/mock/5b15fb5b9ab69517fa2acb43/lagou/lagou#!method=get',
+      success:(res)=>{
+        this.setData({
+          leaderboard:res.data.data.jobs
+        });
+        // console.log(res.data.data.jobs)
+      }
+    })
+  },
+  navigateTap:function(e){
+    var index=e.currentTarget.dataset.index;
+    var detail=this.data.leaderboard[index];
+    app.globalData.detail=detail;
+    console.log(app.globalData.detail)
+    this.setData({
+      detail:detail
+    })
+    // console.log(de)
+    wx.navigateTo({
+      url: '../detail/detail',
+    })
   },
 
   /**

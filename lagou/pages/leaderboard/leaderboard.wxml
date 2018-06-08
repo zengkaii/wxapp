@@ -6,9 +6,9 @@
         <view class="md_left">以下是前100名的招聘官，榜单实时更新</view>
         <view class="md_right" bindtap="ToBoardTap">如何上榜？</view>
     </view>
-    <navigator hover-class="none" url="../detail.detail">
+    <!-- <navigator hover-class="none" url="../detail.detail"> -->
         <view class="ft">
-            <view class="leaderboard" wx:for="{{leaderboard}}" wx:key="index">
+            <view class="leaderboard" wx:for="{{leaderboard}}" wx:key="{{id}}" data-index="{{index}}" bindtap="navigateTap" data-postad="{{item.company}}"> 
                 <view class="leaderboard-image">
                     <image src="{{item.No}}"></image>
                 </view>
@@ -26,5 +26,5 @@
                 </view>
             </view>
         </view>
-    </navigator>
+    <!-- </navigator> -->
 </view>

@@ -1,0 +1,55 @@
+.post-recommend-list{
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    /* display: flex; */
+    
+}
+.post-recommend-list{
+    /* display: inline-block;
+     */
+     display: flex;
+     flex-direction: row;
+     /* padding-left: 30rpx; */
+}
+.post-md{
+    margin-left: 30rpx;
+}
+.list_job{
+    font-size: 12pt;
+}
+.list_company{
+    font-size: 10pt;
+    margin-top: 0;
+}
+.ft{
+    font-size: 9pt;
+    display:flex;
+    /* margin-left: 30rpx; */
+}
+.ft view{
+    margin-left: 30rpx;
+}
+.ft view:first-child{
+    margin-left: 0;
+}
+.post-md{
+
+}
+.post-right{
+    font-size: 8pt;
+    margin-left: 150rpx;
+}
+.post-right .list_money{
+    color: red;
+}
+.post-right .list_date{
+    margin-top: 70rpx;
+}
+.post-recommend-list .image image{
+    width: 100rpx;
+    height: 100rpx;
+    
+}
+
+

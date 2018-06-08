@@ -1,14 +1,15 @@
 {
-  "pages": [
-    
-    
+  "pages": [  
+   
     "pages/index/index",
     "pages/leaderboard/leaderboard",
     "pages/my/my",
     "pages/login/login",
-     "pages/search/search",
     "pages/information/information",
-    "pages/resume/resume"
+    "pages/resume/resume",
+    "pages/about/about", "pages/search/search",
+    "pages/detail/detail"
+  
   ],
   "window": {
     "backgroundTextStyle": "light",

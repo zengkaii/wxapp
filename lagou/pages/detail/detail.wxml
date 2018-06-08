@@ -1,7 +1,7 @@
 <view class="main">
     <view class="detail-company">
-        <view class="detail-company-left">
-            <view class="top">知识圈</view>
+        <view class="detail-company-left" >
+            <view class="top">{{jobb.company}}</view>
             <view class="md">
                 <view class="address">广州/</view>
                 <view class="about">移动互联网,教育/</view>

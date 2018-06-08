@@ -9,6 +9,7 @@ Page({
   data: {
     status:false,
     inputsearch:'',
+    job:[],
     history:[
       {
         list:'前端工程师'
@@ -42,20 +43,41 @@ Page({
       }
     ]
   },
-  onsearch(){
+  search:function(){
+    let sea=[];
+    for(let i=0;i<this.data.job.length;i++){
+      let searchinput= new RegExp(this.data.inputsearch);
+      if(searchinput.test(this.data.job[i].company || this.data.job[i].job || this.data.job[i].address)){
+        sea.push(this.data.job[i]);
+      }else{
+        console.log('111111')
+      }
+
+    }
     this.setData({
-      list:'ssss'
-    });
-    console.log('ssssss');
+       job:sea
+      
+
+    })
+    // console.log(this.data.job);
+    // console.log(job)
   },
   inputSearchTap:function(e){
-    this.setData({
-      inputsearch: e.detail.value,
-     
-    }) ;
+      // if(e.detail.value===this.data.job)
+      // {
+        
+      // }
+      // console.log(this.data.job)
+    // let list=[];
+    // // let his=[];
+    // his=this.data.history
+    // this.setData({
+    //   list: e.detail.value,
+    //   history:his.push(list)
+    // }) ;
     if(e.detail.value==='前端'){
       wx.navigateTo({
-        url: '../detail/detail',
+        url: '../about/about',
       })
     }
     // console.log('1111');
@@ -73,9 +95,12 @@ Page({
       content:'确定删除全部搜索历史？',
       confirmText:'全部删除',
       success:function(res){
-        if(res.confirm){
+        if(res.confirm){ 
+          // wx.removeStorageSync('history')
           that.setData({
               status:true,
+              history:[]
+             
                 
           })
         console.log(typeof(status));
@@ -100,7 +125,15 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    wx.request({
+      url:'https://www.easy-mock.com/mock/5b15fb5b9ab69517fa2acb43/lagou/lagou#!method=get',
+      success:(res)=>{
+        this.setData({
+          job:res.data.data.jobs
+        });
+        
+      }
+    })
   },
 
   /**

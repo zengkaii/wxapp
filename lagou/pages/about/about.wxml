@@ -1,0 +1,21 @@
+ <navigator url="" hover-class="none" url="../detail/detail">
+            <view class="post-recommend-list" wx:for="{{job}}" wx:key="index">
+                <view class="image">
+                    <image mode="aspectFill" class="recommend-detail_image" src="{{item.image}}"></image>                  
+                </view>
+                <view class="post-md">
+                    <view class="list_job">{{item.job}}</view>
+                    <view class="list_company">{{item.company}}</view>
+                    <view class="ft">
+                        <view class="list_address">{{item.address}}</view>
+                        <view class="list_exp">{{item.exp}}</view>
+                        <view class="list_education">{{item.education}}</view>
+                    </view>
+                </view>
+                <view class="post-right">
+                    <view class="list_money">{{item.money}}</view>
+                    <view class="list_date">{{item.date}}</view>
+                </view>
+                
+            </view>
+    </navigator>
