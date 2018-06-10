@@ -13,7 +13,7 @@ Page({
     job:[],
     newSearch:[],
     history:[],
-    like:["前端","java","后端","高级"]
+    like:["前端","java","后端","高级","佳得乐","深圳"]
   },
 
   search:function(e){
