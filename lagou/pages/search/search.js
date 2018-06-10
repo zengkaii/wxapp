@@ -22,8 +22,19 @@ Page({
     var jobs=this.data.job;
     var input = new RegExp(sear);
     var temp = [];
-
-    this.data.history.unshift(sear);
+    
+    
+   
+   
+    if(sear == ''){
+      wx.showToast({
+        title: '请输入要搜索信息',
+        icon:"none",
+        duration: 1000
+      });
+     return false;
+    }else{
+       this.data.history.unshift(sear);
     wx.setStorage({
       key: 'history',
       data: that.data.history,
@@ -36,15 +47,6 @@ Page({
         console.log(res.data);
       },
     })
-   
-    if(sear == ''){
-      wx.showToast({
-        title: '请输入要搜索信息',
-        icon:"none",
-        duration: 1000
-      });
-     
-    }else{
       for(let i =0;i<jobs.length;i++){
 
         if(input.test(jobs[i].job) || input.test(jobs[i].company) || input.test(jobs[i].address)){
