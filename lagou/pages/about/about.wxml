@@ -1,5 +1,5 @@
- <navigator url="" hover-class="none" url="../detail/detail">
-            <view class="post-recommend-list" wx:for="{{job}}" wx:key="index">
+ <!-- <navigator url="" hover-class="none" url="../detail/detail"> -->
+            <view class="post-recommend-list" wx:for="{{job}}" wx:key="id" bindtap="navigateTap" data-index="{{index}}">
                 <view class="image">
                     <image mode="aspectFill" class="recommend-detail_image" src="{{item.image}}"></image>                  
                 </view>
@@ -18,4 +18,4 @@
                 </view>
                 
             </view>
-    </navigator>
+    <!-- </navigator> -->

@@ -23,6 +23,13 @@ Page({
       }
     })
   },
+  tiptap(){
+    wx.showToast({
+      title: '该功能尚未开放',
+      icon: 'none',
+      duration: 2000
+    })
+  },
   toChart(){
 
   

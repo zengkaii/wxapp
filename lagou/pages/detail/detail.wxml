@@ -3,14 +3,14 @@
         <view class="detail-company-left" >
             <view class="top">{{jobb.company}}</view>
             <view class="md">
-                <view class="address">广州/</view>
-                <view class="about">移动互联网,教育/</view>
-                <view class="financing">A轮/</view>
+                <view class="address">{{jobb.address}}/</view>
+                <view class="about">{{jobb.about}}/</view>
+                <view class="financing">{{jobb.financing}}/</view>
             </view>
-            <view class="ft">15-50人</view>
+            <view class="ft">{{jobb.people}}</view>
         </view>
         <view class="detail-company-right">
-            <image src-="https://www.lgstatic.com/thumbnail_120x120/i/image/M00/85/F4/CgpFT1rNiAGAZhFpAAAVoksvFAs339.png"></image>
+            <image src="{{jobb.image}}"></image>
             
         </view>
     </view>
@@ -32,8 +32,23 @@
         </view>
     </view>
     <view class="detail-about">
-        <view class="detail-about-more">
+        <view class="detail-about-title">
             公司详情
+        </view>
+        <view class="detail-about-more">
+                中国铁路总公司（下称“铁总”）混改第一单正式落地。6月6日，《经济参考报》记者从铁总获悉，近日其下属企业动车网络科技有限公司（下称“动车网络”）股权转让招投标工作圆满完成，深圳市腾讯计算机系统有限公司、浙江吉利控股集团有限公司两企业组成的联合体中标，以43亿元受让动车网络科技有限公司49%的股权，打响智慧交通争夺战。
+
+                　　这是首次通过产权交易方式引入社会资本发展动车网络，也是铁总2018年在混改上迈出的实质性一步。按计划，今年铁总将加速推进混改，研究各专业优势公司和科技型企业实施混改方案，吸引社会资本参与铁路投资。
+                
+                　　腾讯、吉利43亿杀入高铁“朋友圈”
+                
+                　　资料显示，动车网络成立于2017年12月20日，注册资本5000万元，此前由中国铁路投资有限公司全资持有，也是铁总确定的下属企业中唯一经营动车组Wi-Fi的企业，营业期限为20年。
+                
+                　　而截至2017年，中国高铁里程已达2.5万公里，占全世界高铁总里程66.3%，动车组年运送旅客达17.1亿人次，覆盖人群约2亿人。
+                
+                　　2018年4月2日，动车网络49%股权以30.49亿元在北京产权交易所正式挂牌。相关公告显示，意向受让方可为联合体，且每个企业仅能参与一个联合体，联合体成员不多于5家，且每家联合体成员受让标的企业股权比例不低于5%。
+                
+                　　投标门槛之高，让不少外界人士将潜在投资范围缩小至互联网企业。2017年7月铁总党组书记、总经理陆东福会见了腾讯公司董事局主席兼首席执行官马化腾一行，双方就深化路企合作举行会谈。11月陆东福在与阿里巴巴集团董事局主席马云座谈时提出，希望双方探索高铁Wi-Fi等方面的市场化合作。
         </view>
     </view>
 </view>

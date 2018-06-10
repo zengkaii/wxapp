@@ -16,8 +16,8 @@
             <view class="post-recommend-title_mid">为你推荐的好职位</view>
             <view class="post-recommend-title_right"></view>
         </view>
-        <navigator url="" hover-class="none" url="../detail/detail">
-            <view class="post-recommend-list" wx:for="{{job}}" wx:key="index">
+        
+            <view class="post-recommend-list" wx:for="{{job}}" wx:key="index" bindtap="navigateTap" data-index="{{index}}">
                 <image mode="aspectFill" class="recommend-detail_image" src="{{item.image}}"></image>                  
                 <text class="list_job">{{item.job}}</text>
                 <text class="list_money">{{item.money}}</text>
@@ -27,6 +27,6 @@
                 <text class="list_education">{{item.education}}</text>
                 <text class="list_date">{{item.date}}</text>
             </view>
-    </navigator>
+
     </view>
 </view>

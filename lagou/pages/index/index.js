@@ -18,6 +18,19 @@ Page({
         
       }
     })
+  },
+  navigateTap:function(e){
+    var index=e.currentTarget.dataset.index;
+    var detail=this.data.job[index];
+    app.globalData.detail=detail;
+    console.log(app.globalData.detail)
+    this.setData({
+      detail:detail
+    })
+    // console.log(de)
+    wx.navigateTo({
+      url: '../detail/detail',
+    })
   }
 })
 

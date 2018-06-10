@@ -2,7 +2,10 @@
     padding-top: 30rpx;
     padding-left: 30rpx;
     padding-right: 30rpx;
+    position: relative;
+    padding-bottom: 20rpx;
     /* display: flex; */
+    border-bottom: 1px solid rgb(207, 196, 196);
     
 }
 .post-recommend-list{
@@ -11,6 +14,7 @@
      display: flex;
      flex-direction: row;
      /* padding-left: 30rpx; */
+     /* position: relative; */
 }
 .post-md{
     margin-left: 30rpx;
@@ -33,12 +37,13 @@
 .ft view:first-child{
     margin-left: 0;
 }
-.post-md{
 
-}
 .post-right{
     font-size: 8pt;
-    margin-left: 150rpx;
+    /* float: right; */
+    /* margin-left: 150rpx; */
+    position: absolute;
+    right: 30rpx;
 }
 .post-right .list_money{
     color: red;

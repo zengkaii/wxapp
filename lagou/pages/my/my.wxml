@@ -20,25 +20,25 @@
             <view class="list_ft list_ft_access"></view>
         </view>
     </navigator>
-    <navigator hover-class="none">
-        <view class="item">
+
+        <view class="item"  bindtap="tiptap">
             <view class="list_image">
                 <image src="../../images/jilu.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
             </view>
             <view class="list_bd">投递记录</view>
             <view class="list_ft list_ft_access"></view>
         </view>
-    </navigator>
-    <navigator hover-class="none">
-        <view class="item">
+
+
+        <view class="item" bindtap="tiptap">
             <view class="list_image">
                 <image src="../../images/shoucang.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5px;"></image>
             </view>
             <view class="list_bd">职位收藏</view>
             <view class="list_ft list_ft_access"></view>
         </view>
-    </navigator>
-    <view class="item item_after" bindtap="toChart">
+
+    <view class="item item_after" bindtap="tiptap">
         <view class="list_image">
             <image src="../../images/fankui.png" style="width: 20px;height: 20px;vertical-align: middle;margin-right: 5rpx;"></image>
         </view>

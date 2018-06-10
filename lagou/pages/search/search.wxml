@@ -5,20 +5,21 @@
                  
                   <input type="text" placeholder="搜索公司/职位" auto-focus="true" value="{{inputsearch}}" 
                   bindconfirm="search"
-                  bindinput="inputSearchTap"/>
+                  bindinput="inputSearchTap"
+                  data-index="{{index}}"/>
             </view>
 
                   <view class="search-top-cancel" bindtap="cancelTap">取消</view>
 
       </view>
-      <view class="search-history" hidden="{{status}}">
+      <view class="search-history" wx:if="{{status}}">
             <view class="search-history-title">
                   <text>历史搜索</text>
                   <image src="../../images/delete.png" bindtap="deleteHistory"></image>
             </view>
             <view class="search-history-detail" >
-                  <view class="history-detail" wx:for="{{history}}" wx:key="index">
-                        <text class="detail" >{{item.list}}</text>
+                  <view class="history-detail" wx:for="{{history}}" wx:key="{{item}}" bindtap="historySearch" data-index="{{index}}">
+                        <text class="detail" >{{item}}</text>
                   </view>
             </view>
       </view>
@@ -27,9 +28,9 @@
                         <text>猜你要搜</text>
                   </view>
                   <view class="search-history-detail" >
-                        <view class="history-detail" wx:for="{{like}}" wx:key="index">
-                              <text class="detail" >{{item.ls}}</text>
+                        <view class="history-detail" wx:for="{{like}}" wx:key="index"  bindtap="likeSearch" data-index="{{index}}">
+                              <text class="detail" >{{item}}</text>
                         </view>
                   </view>
-            </view>
+      </view>
       

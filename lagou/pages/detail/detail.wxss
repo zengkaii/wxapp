@@ -95,3 +95,8 @@ page{
     /* height: 200rpx; */
     /* overflow: hidden; */
 }
+.detail-about-more{
+    font-size: 8pt;
+    color: rgb(179, 170, 170);
+    letter-spacing: 1px;
+}

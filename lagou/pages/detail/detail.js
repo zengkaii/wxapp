@@ -23,8 +23,8 @@ Page({
     this.setData({
       jobb:app.globalData.detail
     })
-    console.log(app.globalData.detail)
-    
+    // console.log(app.globalData.detail.company)
+    // console.log(this.data.jobb.company);
   },
 
   /**
