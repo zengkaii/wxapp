@@ -8,7 +8,7 @@ Page({
 
   data: {
 
-    status:true,
+    status:false,
     inputsearch:'',
     job:[],
     newSearch:[],
